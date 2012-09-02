@@ -132,7 +132,7 @@ Route::set('wiki-page', 'wiki/<page>')
 		'action'	=> 'view_page',
 	));
  
-Route::set('default', 'wiki')
+Route::set('default', '(wiki)')
 	->defaults(array(
 		'controller' => 'wiki',
 		'action'     => 'view_page',
