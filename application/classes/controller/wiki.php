@@ -69,8 +69,9 @@ class Controller_Wiki extends Controller {
 			$new_single->save();
 		}
 		
-		$this->request->redirect('http://127.0.0.1/query7kwiki/index.php/wiki/' . $page);
-		
+		$this->request->redirect(Route::get('wiki-page')->uri(array(
+		  'page' => $page,
+		)));
 	}
 
 } // End Welcome
