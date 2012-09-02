@@ -81,7 +81,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 Kohana::init(array(
 	'base_url'   => '/query7kwiki/',
-	'index_file' => 'index.php'
+	'index_file' => ''
 ));
 
 /**
